@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: "Hono is a modern banking platform for everyone.",
   icons: {
     icon:'icons/logo.svg'
-  }
+  } 
 };
 
 export default function RootLayout({
@@ -24,7 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={'${inter.variable} ${ibmPlexSerif.variable}'}>{children}</body>
+      <body>
+
+    <main className="flex h-screen w-full font-inter">
+      {children}
+    </main>
+      </body>
     </html>
   );
 }
